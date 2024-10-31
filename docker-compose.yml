@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  vite:
+    build: .
+    ports:
+      - "5173:5173" # Adjust based on your Vite configuration
+    volumes:
+      - .:/app # Mount current directory to /app in the container
+    tty: true # Keep the terminal open for interaction
